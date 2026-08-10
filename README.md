@@ -1,6 +1,6 @@
-# Leapfrog Labs — website
+# Slipstream Labs — website
 
-A single-page marketing site for Leapfrog Labs. Static, no build step, no
+A single-page marketing site for Slipstream Labs. Static, no build step, no
 dependencies. Written in plain HTML, CSS and vanilla JS so it stays easy to read,
 edit and host anywhere.
 
@@ -21,7 +21,7 @@ npx serve .
 ## Project structure
 
 ```
-leapfrog-labs/
+slipstream-labs/
 ├── index.html          # All content + page structure (single source of truth)
 ├── css/
 │   └── styles.css      # Design tokens + component styles (see section map on top)
@@ -41,7 +41,7 @@ leapfrog-labs/
 | Adjust spacing rhythm          | `:root` → `--container-*`, `--section-pad` |
 | Change the logo shape          | `index.html` → the `#lf-mark` `<symbol>` (defined once, reused via `<use>`) |
 | Tune the R&D schematic colours | `css/styles.css` → `--bp-*` tokens (section 1) |
-| Change the contact email       | `index.html` → `mailto:hello@leapfrog.se` |
+| Change the contact email       | `index.html` → `mailto:hello@slipstreamlabs.se` |
 
 ### Design tokens
 Colours are **never** hard-coded inside components — they always reference a

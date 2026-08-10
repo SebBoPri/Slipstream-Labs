@@ -1,5 +1,5 @@
 /* ============================================================
-   LEAPFROG LABS  -  behaviour
+   SLIPSTREAM LABS  -  behaviour
    1. Nav turns solid after scrolling
    2. Scroll reveal (once per element)
    3. Contact form composes a pre-filled email (works on static hosting)
@@ -12,4 +12,4 @@ document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
 var cf=document.getElementById('cform');
 if(cf){cf.addEventListener('submit',function(e){e.preventDefault();
   var body=encodeURIComponent('Name: '+cf.name.value+'\nEmail: '+cf.email.value+'\n\n'+cf.msg.value);
-  location.href='mailto:hello@leapfroglabs.com?subject='+encodeURIComponent('New conversation from '+cf.name.value)+'&body='+body;});}
+  location.href='mailto:hello@slipstreamlabs.se?subject='+encodeURIComponent('New conversation from '+cf.name.value)+'&body='+body;});}
