@@ -82,6 +82,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.02em;line-heig
 .flag-meta dt{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
 .flag-meta dd{font-size:14px;color:var(--ink-2);line-height:1.6}
 .flag-right .btn{justify-content:center;width:100%}
+.qcompare{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:60px;padding-top:50px;border-top:1px solid var(--line)}
 
 /* 8 supporting sprints */
 .svcs{padding:150px 0;border-top:1px solid var(--line)}
@@ -141,8 +142,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.02em;line-heig
 
 /* 13 about */
 .about{padding:150px 0;border-top:1px solid var(--line)}
-.ab-grid{display:grid;grid-template-columns:340px 1fr;gap:70px;align-items:start}
-.portrait{aspect-ratio:4/5;border:1px solid var(--line);background:var(--bg-2);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3)}
+.ab-grid{max-width:62ch}
 .about h2{font-size:clamp(30px,3.6vw,48px);margin-top:20px}
 .about .lead{color:var(--ink-2);margin-top:22px;max-width:52ch;font-size:16px}
 .ab-pts{margin-top:36px}
@@ -185,10 +185,9 @@ h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.02em;line-heig
 /* 17 responsive */
 @media(max-width:920px){
   .nav-links{display:none}
-  .prob-grid,.flag-grid,.appr-grid,.c-grid,.ab-grid{grid-template-columns:1fr;gap:48px}
+  .prob-grid,.flag-grid,.appr-grid,.c-grid,.qcompare{grid-template-columns:1fr;gap:48px}
   .sv-grid,.fn-grid,.cs-grid{grid-template-columns:1fr}
   .phases li{grid-template-columns:1fr;gap:8px;padding:26px 0}
   .flag-right{position:static}
-  .portrait{max-width:340px}
   .problem,.svcs,.flag,.approach,.statement,.fieldnotes,.cases,.about,.contact{padding:100px 0}
 }
